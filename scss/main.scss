@@ -19,6 +19,12 @@ p {
     letter-spacing: 2px;
 }
 
+@media only screen and (min-width: 768px)  and (max-width: 1024px) {
+    .form-inline {
+        padding-top: 15px;
+    }
+}
+
 h1 {
     color: black;
     font-family: $font-family;
@@ -39,6 +45,9 @@ h2 {
     text-transform: $text-transformation;
     animation-duration: 4s;
     animation-name: Truco;
+    @media only screen and (min-width: 768px)  and (max-width: 1024px){
+        font-size: 1,5rem;
+    }
 }
 
 h3 {
@@ -91,6 +100,16 @@ nav {
     position: absolute;
     left: 200px;
     top: 20px;
+    @media only screen and (min-width: 768px)  and (max-width: 1024px) {
+        font-size: 1.5rem;
+        left: 150px;
+    }
+    @media only screen and (min-width: 320px)  and (max-width: 767px) {
+        position: relative;
+        font-size: 0.7rem;
+        top:20px;
+        left:10px;
+    }
 }
 
 .imgFooter {
@@ -119,7 +138,7 @@ nav {
 
 .GridTest {
     padding: 20px;
-    font-size: 30px;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -159,6 +178,22 @@ header {
     width: 40%;
     border-radius: 10px;
 }
+
+.fotoVentasAlq {
+    margin-inline-start: 55px;
+    width: 65%;
+    border-radius: 10px;
+  }
+  
+  .fotoAlq {
+    margin-inline-start: 155px;
+    width: 35%;
+    border-radius: 10px;
+    @media only screen and (min-width: 768px)  and (max-width: 1024px) {
+        margin-inline-start: 100px;
+        width: 45%;
+    }
+  }
 
 .logo {
     border-radius: 10px;

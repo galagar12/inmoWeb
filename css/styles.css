@@ -4,8 +4,7 @@ body {
   background-position: center;
   font-family: sans-serif;
   background-size: cover;
-  position: relative;
-}
+  position: relative; }
 
 p {
   margin: 8px;
@@ -14,8 +13,11 @@ p {
   line-height: 30px;
   font-family: "Roboto", sans-serif;
   font-size: 21px;
-  letter-spacing: 2px;
-}
+  letter-spacing: 2px; }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .form-inline {
+    padding-top: 15px; } }
 
 h1 {
   color: black;
@@ -25,8 +27,7 @@ h1 {
   justify-content: center;
   text-transform: uppercase;
   animation-duration: 4s;
-  animation-name: Truco;
-}
+  animation-name: Truco; }
 
 h2 {
   color: black;
@@ -36,52 +37,44 @@ h2 {
   justify-content: center;
   text-transform: uppercase;
   animation-duration: 4s;
-  animation-name: Truco;
-}
+  animation-name: Truco; }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    h2 {
+      font-size: 1,5rem; } }
 
 h3 {
-  font-family: "Roboto", sans-serif;
-}
+  font-family: "Roboto", sans-serif; }
 
 a {
-  color: white !important;
-}
+  color: white !important; }
 
 hr {
   height: 2px;
   width: 92%;
-  background-color: orange;
-}
+  background-color: orange; }
 
 nav {
   display: flex;
   justify-content: space-evenly;
-  margin: auto;
-}
-
-nav ul li {
-  display: inline-block;
-  padding: 20px;
-  background-color: none;
-  position: relative;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: black;
-  align-items: center;
-  justify-content: center;
-}
-
-nav ul ul {
-  display: none;
-  position: absolute;
-  border-radius: 15px;
-  justify-content: center;
-}
+  margin: auto; }
+  nav ul li {
+    display: inline-block;
+    padding: 20px;
+    background-color: none;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center; }
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      align-items: center;
+      justify-content: center; }
+  nav ul ul {
+    display: none;
+    position: absolute;
+    border-radius: 15px;
+    justify-content: center; }
 
 .header__titulo {
   color: whitesmoke;
@@ -91,23 +84,29 @@ nav ul ul {
   animation-name: Truco;
   position: absolute;
   left: 200px;
-  top: 20px;
-}
+  top: 20px; }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .header__titulo {
+      font-size: 1.5rem;
+      left: 150px; } }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .header__titulo {
+      position: relative;
+      font-size: 0.7rem;
+      top: 20px;
+      left: 10px; } }
 
 .imgFooter {
-  width: 70%;
-}
+  width: 70%; }
 
 .btn-dark {
   color: #fff;
-  background-image: linear-gradient(to right top, #9e5b24, #b26823, #c57720, #d9851b, #eb9512) !important;
-}
+  background-image: linear-gradient(to right top, #9e5b24, #b26823, #c57720, #d9851b, #eb9512) !important; }
 
 .posicion__mapa {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .GridContenedor {
   background-color: none;
@@ -115,100 +114,88 @@ nav ul ul {
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 10px;
   padding: 10px;
-  align-content: center;
-}
+  align-content: center; }
 
 .GridTest {
   padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
+  font-size: 16px;
+  text-align: center; }
 
 header {
   display: flex;
   background-image: linear-gradient(to right, #f5cfa1, #f3ba7d, #f0a55a, #ee8e39, #eb7512);
   justify-content: center;
-  text-align: left;
-}
+  text-align: left; }
 
 @keyframes Truco {
   0% {
-    opacity: 0;
-  }
+    opacity: 0; }
   100% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 .mapa {
   height: 300px;
   width: 470px;
-  border-radius: 50px;
-}
+  border-radius: 50px; }
 
 .fotoindex {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-}
+  align-items: center; }
 
 .fotoindex__imgchica {
   width: 10%;
-  border-radius: 50px;
-}
+  border-radius: 50px; }
 
 .fotoQuienes {
   width: 40%;
-  border-radius: 10px;
-}
+  border-radius: 10px; }
+
+.fotoVentasAlq {
+  margin-inline-start: 55px;
+  width: 65%;
+  border-radius: 10px; }
+
+.fotoAlq {
+  margin-inline-start: 155px;
+  width: 35%;
+  border-radius: 10px; }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .fotoAlq {
+      margin-inline-start: 100px;
+      width: 45%; } }
 
 .logo {
   border-radius: 10px;
-  width: 10%;
-}
-
-.direccion {
-  border-radius: 10px;
-  width: 10%;
-  text-align: center;
-}
+  width: 10%; }
 
 .header {
-  background-color: white;
-}
+  background-color: white; }
 
 .carousel {
-  margin-left: 10%;
-}
+  margin-left: 10%; }
 
 carousel-inner img {
   width: 65%;
-  height: 45%;
-}
+  height: 45%; }
 
 .carousel-indicators {
-  margin-left: auto !important;
-}
+  margin-left: auto !important; }
 
 .carousel-inner .item img {
-  width: 100%;
-}
+  width: 100%; }
 
 .carousel-control-prev-icon {
-  margin-left: -120px;
-}
+  margin-left: -120px; }
 
 .carousel-control-next-icon {
-  margin-left: -240px;
-}
+  margin-left: -240px; }
 
 .scale {
-  transition: transform 0.2s;
-}
+  transition: transform 0.2s; }
 
 .scale:hover {
-  transform: scale(1.2);
-}
+  transform: scale(1.2); }
 
 .footer {
   width: 100%;
@@ -216,12 +203,10 @@ carousel-inner img {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to bottom, #f5cfa1, #f3ba7d, #f0a55a, #ee8e39, #eb7512);
-}
+  background-image: linear-gradient(to bottom, #f5cfa1, #f3ba7d, #f0a55a, #ee8e39, #eb7512); }
 
 .footerDiv {
   margin: 5px;
   flex: 1;
   min-width: 30%;
-  padding: 20px;
-}
+  padding: 20px; }
